@@ -12,7 +12,7 @@ class NhkVodIE(InfoExtractor):
         webpage = self._download_webpage(url, video_id)
 
         embed_code = self._search_regex(
-            r"nw_vod_ooplayer\('movie-area', '([^']+)'\);",
+            r'''nw_vod_ooplayer\('movie-area', '([^']+)'\);''',
             webpage,
             'ooyala embed code')
 
