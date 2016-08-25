@@ -4,7 +4,7 @@ from .common import InfoExtractor
 
 
 class NhkVodIE(InfoExtractor):
-    _VALID_URL = r'http://www3.nhk.or.jp/nhkworld/en/vod/(?P<id>.+)\.html'
+    _VALID_URL = r'http://www3\.nhk\.or\.jp/nhkworld/en/vod/(?P<id>.+)\.html'
     _TESTS = [{
         'url': 'http://www3.nhk.or.jp/nhkworld/en/vod/tokyofashion/20160815.html',
         'info_dict': {
